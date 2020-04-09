@@ -5,6 +5,9 @@ Example python backend for uploading images to AWS S3 using serverless.
 
 Example uploader using uppload and create-react-app.
 
+Back-end
+---
+
 To set up the backend:
 
 1. Set up your AWS credentials in serverless.yml
@@ -22,6 +25,12 @@ This creates the S3 bucket and API. Output shows something like:
 
 You need the secret api key and the API prefix to run the demo.
 Copy the example/.env.template to example/.env and fill them in.
+
+Note: Even though the S3 is private, the GET api is public by default!
+
+
+Front-end
+---
 
 Then you can start the demo by running under example:
 

@@ -65,7 +65,11 @@ functions:
     handler: wsgi_handler.handler
     events:
       - http: 
-          method: any
-          path: /{proxy+}
+          method: post
+          path: /images
           private: true
+          cors: true
+      - http:
+          method: get
+          path: /images/{id}
           cors: true
